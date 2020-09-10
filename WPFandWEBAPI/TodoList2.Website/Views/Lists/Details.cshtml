@@ -1,0 +1,46 @@
+﻿@model List
+@inject SignInManager<ApplicationUser> SignInManager
+
+@{
+    ViewData["Title"] = "List Items";
+}
+
+<h2>@Html.DisplayFor(model => model.Name)</h2>
+
+<div>
+    <hr />
+    @foreach (var item in Model.Items.OrderBy(item => item.Deadline))
+    {
+        <div>
+            <b>@Html.DisplayFor(model => item.Name)</b> (@Html.DisplayFor(model => item.Deadline))
+        </div>
+        <div style="white-space: pre-line">
+            @Html.DisplayFor(model => item.Description)
+        </div>
+        <div>
+
+            @if (SignInManager.IsSignedIn(User))
+            {
+                @*
+                    A @() egy másik módja lehet a <text> tag helyett rövid szöveg kiírására egy blokkon belül.
+                    (A @() egyébként nem felétlenül erre való)
+                *@
+                <a asp-action="Edit" asp-controller="Items" asp-route-id="@item.Id">Edit</a> @("|")
+                <a asp-action="Delete" asp-controller="Items" asp-route-id="@item.Id">Delete</a>
+            }
+        </div>
+        <p>&nbsp;</p>
+    }
+</div>
+<div>
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <text>
+            <a asp-action="CreateItem" asp-route-id="@Model.Id">Add Item</a> |
+            <a asp-action="Edit" asp-route-id="@Model.Id">Rename List</a> |
+            <a asp-action="Index">Back to List</a>
+        </text>
+    }
+
+
+</div>

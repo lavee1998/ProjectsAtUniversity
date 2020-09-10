@@ -1,0 +1,65 @@
+﻿<Window x:Class="TodoList2.Desktop.View.OrdersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:local="clr-namespace:TodoList2.Desktop.View"
+        xmlns:vm="clr-namespace:TodoList2.Desktop.ViewModel"
+        
+        mc:Ignorable="d"
+        Title="OrdersWindow" Height="450" Width="800">
+    <StackPanel>
+        <Button Name="Kijelentkezés" Command="{Binding LogOutfromOrderCommand}">Kijelentkezés</Button>
+        <Button Name="Rendelések" Command="{Binding CategoriesCommand}">Kategóriák</Button>
+
+
+        <DatePicker x:Name ="Dátumválasztó" ></DatePicker>
+        <Button Content="Keresés" Command="{Binding SearchDateCommand}"
+                CommandParameter="{Binding ElementName=Dátumválasztó}" />
+        
+        <TextBox x:Name="TextBox"   />
+        
+        <Button Content="Keresés" Command="{Binding SearchCommand}"
+                CommandParameter="{Binding ElementName=TextBox}" />
+        <ListBox x:Name="lists" Height="100" ItemsSource="{Binding CompletedLists}">
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Text}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="SelectionChanged">
+                    <i:InvokeCommandAction Command="{Binding SelectCommand}"
+                                           CommandParameter="{Binding ElementName=lists, Path=SelectedItem}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+        </ListBox>
+        <DataGrid x:Name="customers"  VerticalContentAlignment="Stretch" 
+                  ItemsSource="{Binding OrderDTOs , UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Azonosító" Binding="{Binding CustomerId}" />
+                <DataGridTextColumn Header="Név" Binding="{Binding CustomerName}" />
+                <DataGridTextColumn Header="Cím" Binding="{Binding CustomerAddress}" />
+                <DataGridTextColumn Header="Telefonszám" Binding="{Binding CustomerPhoneNumber}" />
+                <DataGridTextColumn Header="Email" Binding="{Binding CustomerEmail}" />
+              
+                <DataGridTextColumn Header="Termék leírás" Binding="{Binding Description}" />
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Name="ShowOrders"  Command="{Binding DataContext.FinalizationCommand,RelativeSource=
+    {RelativeSource FindAncestor, AncestorType=DataGrid} }" 
+                          
+                             CommandParameter="{Binding CustomerId}">Véglegesítés</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+    
+
+    </StackPanel>
+</Window>

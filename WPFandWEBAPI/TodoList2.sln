@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29424.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList2.WebApi", "TodoList2.WebApi\TodoList2.WebApi.csproj", "{F61100F7-D566-4281-8878-9D68B20A4B91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList2.Desktop", "TodoList2.Desktop\TodoList2.Desktop.csproj", "{77523DE5-F4DD-4104-A7C2-BFA186A216BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList2.Persistence", "TodoList2.Persistence\TodoList2.Persistence.csproj", "{1D9C71B1-D8E7-45E0-8867-8E71C00A86F3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persistence", "Persistence\Persistence.csproj", "{7525AA59-B691-458B-98AD-AA65F5ED41E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebShopApplication", "WebShopApplication\WebShopApplication.csproj", "{8CA46DC9-9388-4064-8A08-F9401B1A5980}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList2.WebApi.Tests", "TodoList2.Test\TodoList2.WebApi.Tests.csproj", "{403AFC1C-7C74-423B-A82C-7BF1760AD26C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F61100F7-D566-4281-8878-9D68B20A4B91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F61100F7-D566-4281-8878-9D68B20A4B91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F61100F7-D566-4281-8878-9D68B20A4B91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F61100F7-D566-4281-8878-9D68B20A4B91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77523DE5-F4DD-4104-A7C2-BFA186A216BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77523DE5-F4DD-4104-A7C2-BFA186A216BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77523DE5-F4DD-4104-A7C2-BFA186A216BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77523DE5-F4DD-4104-A7C2-BFA186A216BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D9C71B1-D8E7-45E0-8867-8E71C00A86F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D9C71B1-D8E7-45E0-8867-8E71C00A86F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D9C71B1-D8E7-45E0-8867-8E71C00A86F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D9C71B1-D8E7-45E0-8867-8E71C00A86F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7525AA59-B691-458B-98AD-AA65F5ED41E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7525AA59-B691-458B-98AD-AA65F5ED41E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7525AA59-B691-458B-98AD-AA65F5ED41E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7525AA59-B691-458B-98AD-AA65F5ED41E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CA46DC9-9388-4064-8A08-F9401B1A5980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CA46DC9-9388-4064-8A08-F9401B1A5980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CA46DC9-9388-4064-8A08-F9401B1A5980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CA46DC9-9388-4064-8A08-F9401B1A5980}.Release|Any CPU.Build.0 = Release|Any CPU
+		{403AFC1C-7C74-423B-A82C-7BF1760AD26C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{403AFC1C-7C74-423B-A82C-7BF1760AD26C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{403AFC1C-7C74-423B-A82C-7BF1760AD26C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{403AFC1C-7C74-423B-A82C-7BF1760AD26C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43FA005B-6C7B-4E35-BF08-2CEDACAA36C8}
+	EndGlobalSection
+EndGlobal

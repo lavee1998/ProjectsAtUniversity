@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TodoList2.Desktop.ViewModel.CompletedVM">
+    <Position X="10" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>ViewModel\CompletedVM.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TodoList2.Desktop.ViewModel.DelegateCommand" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEACAAQAAECAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\DelegateCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TodoList2.Desktop.ViewModel.LoginViewModel">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgACAAAAAAAAAAAAAgBAAAAAQAAAABAEAQAAEACAAAA=</HashCode>
+      <FileName>ViewModel\LoginViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TodoList2.Desktop.ViewModel.MessageEventArgs">
+    <Position X="10" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>ViewModel\MessageEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TodoList2.Desktop.ViewModel.OrdersViewModel">
+    <Position X="1.75" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAGAgICgAIGQgAAYAIAIDIAAADAAQFQAAAAAAAAACIA=</HashCode>
+      <FileName>ViewModel\OrdersViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TodoList2.Desktop.ViewModel.TodoListViewModel">
+    <Position X="5.75" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAEAgACgAAASCAAQAAgQBIAAgBAASQQAQIAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\TodoListViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TodoList2.Desktop.ViewModel.ViewModelBase">
+    <Position X="4" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAoAAAAAAAgAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>ViewModel\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

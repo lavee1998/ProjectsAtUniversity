@@ -1,0 +1,90 @@
+﻿
+@model WebShopApplication.Models.CartViewModel
+
+@{
+    
+}
+
+<h1>@ViewData["Title"]</h1>
+
+
+<h4>Category</h4>
+<hr />
+@{List<Product> _productList = new List<Product>(Model._productcart.Keys); }
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                A kosárban lévő termékek gyártója
+            </th>
+            <th>
+                A kosárban lévő termékek leírása
+            </th>
+            <th>
+                A nettó ára a terméknek
+            </th>
+            <th>
+                Bruttó ára a terméknek
+            </th>
+
+            <th>
+                A még raktáron lévő termékek száma(virtuális)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in _productList)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => product.Manufacturer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => product.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => product.NetPrice)
+            </td>
+            <td>
+                @{int bprice = product.NetPrice + (27 * product.NetPrice) / 100;}
+                @Html.DisplayFor(model => bprice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => product.VirtualStock)
+            </td>
+            <td>
+                <form asp-controller="ShoppingCart" asp-action="EditShopCart"
+                      asp-route-id="@product.ModelNumber" asp-route-ItemCounter="@Model.ItemCounter"
+                      >
+                    <p>
+                        <input type="number" asp-for="ItemCounter" min ="0" max =@product.Stock value="@Model._productcart[product]" />
+                        <span><input type="submit" value="Kosárhoz adás" /></span>
+                    </p>
+                </form>
+
+            </td>
+
+
+        </tr>
+
+        }
+    <tr>
+        <td>
+            <a asp-action="Index" asp-controller="Categories">Back to Start</a>
+        </td>
+        <td>
+            <a asp-action="ClearShopCart" asp-controller="ShoppingCart">Kosár ürítése</a>
+        </td>
+        <td>
+            <a asp-action="OrderFinalization" asp-controller="ShoppingCart">Adatok megadása, rendelés véglegesítése</a>
+        </td>
+      
+    </tr>
+
+    </tbody>
+    </table>
+
+
+
+
+

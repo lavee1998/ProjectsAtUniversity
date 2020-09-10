@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TodoList2.Desktop.Model.NetworkException">
+    <Position X="2.75" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\NetworkException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TodoList2.Desktop.Model.TodoListService" BaseTypeListCollapsed="true">
+    <Position X="4.5" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AhBAAABAAAABIEQgAAABACAAAAAIAAEAAAAQAAAAAgA=</HashCode>
+      <FileName>Model\TodoListService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="TodoList2.Desktop.Model.ITodoListService">
+    <Position X="1.75" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AhBAAABAAAABIAQgAAABACAAAAAIAAEAAAAQAAAAAAA=</HashCode>
+      <FileName>Model\ITodoListService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

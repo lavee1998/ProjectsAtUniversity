@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Category>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryName)
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Products)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var productscategory in Model) {
+
+
+    var mylist = productscategory.Products.ToList();
+
+    bool b = true;
+    var randomItem = mylist[0];
+    while(b)
+    {
+        var random= new Random();
+        int randomValue = random.Next(mylist.Count);
+        randomItem = mylist[randomValue];
+
+        if (randomItem.Avalaible && randomItem.Stock > 0) b = false;
+    }
+
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => productscategory.CategoryName)
+            </td>
+            <td>
+               
+                    @Html.DisplayFor(modelItem => randomItem.Description)
+            </td>
+            <td>
+               
+        <a asp-action="Details" asp-route-id="@productscategory._categoryid" >Tovább a kategóriára</a>  @*|
+          <a asp-action="Delete" asp-route-id="@item._categoryid">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item._categoryid">Edit</a> |*@
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
