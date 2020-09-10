@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mine_Detector_WPF", "..\..\JAVITOTT_MINE_DETECTOR\Mine_Detector_WPF\Mine_Detector_WPF.csproj", "{E3ABF10E-CE04-4DBA-961E-CB5054CB8006}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mine_Detector_WPF_Test", "Mine_Detector_WPF_Test\Mine_Detector_WPF_Test.csproj", "{6D0A9C77-D845-4DD3-A73B-05C4B9A12BF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3ABF10E-CE04-4DBA-961E-CB5054CB8006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3ABF10E-CE04-4DBA-961E-CB5054CB8006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3ABF10E-CE04-4DBA-961E-CB5054CB8006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3ABF10E-CE04-4DBA-961E-CB5054CB8006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D0A9C77-D845-4DD3-A73B-05C4B9A12BF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D0A9C77-D845-4DD3-A73B-05C4B9A12BF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D0A9C77-D845-4DD3-A73B-05C4B9A12BF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D0A9C77-D845-4DD3-A73B-05C4B9A12BF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5662A8E-BA44-4023-B4B8-9979152C5C9B}
+	EndGlobalSection
+EndGlobal

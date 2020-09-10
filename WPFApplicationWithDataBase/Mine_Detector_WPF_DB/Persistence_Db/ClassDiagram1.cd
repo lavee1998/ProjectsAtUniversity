@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Mine_Detector_WPF_DB.Persistence.Field">
+    <Position X="4.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAAAAAAAEAAAAAAAAgAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Field.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mine_Detector_WPF_DB.Persistence.Game">
+    <Position X="4.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAQAAAAAAAAAAAAAAAAAgQA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mine_Detector_WPF_DB.Persistence.GameContext">
+    <Position X="6.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>GameContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mine_Detector_WPF_DB.Persistence.Mine_DetectorDbDataAccess">
+    <Position X="6.25" Y="4.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAABAAAAAAAAAAAAIAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mine_DetectorDbDataAccess.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mine_Detector_WPF_DB.Persistence.Mine_DetectorTable">
+    <Position X="0.5" Y="2.5" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Mine_Detector_WPF_DB.Persistence.Mine_DetectorDataException">
+    <Position X="3" Y="0.5" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Mine_Detector_WPF_DB.Persistence.SaveEntry">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="Mine_Detector_WPF_DB.Persistence.IMine_DetectorDataAccess">
+    <Position X="3.75" Y="2.5" Width="3" />
+    <TypeIdentifier />
+  </Interface>
+  <Enum Name="Mine_Detector_WPF_DB.Persistence.FieldSize" Collapsed="true">
+    <Position X="0.5" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="Mine_Detector_WPF_DB.Persistence.Players" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
